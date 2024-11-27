@@ -1,0 +1,5 @@
+<ul>
+  @for (car of (carsWithManufacturers$ | async); track $index) {
+    <li>Car Model: {{ car.model }}, Manufacturer: {{ car.manufacturerName }}</li>
+  }
+</ul>
